@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{ 
+    /*colores primarios*/
+    --primary-light-blue: #00a0e3;
+    --primary-blue: #0f5c9f;
+    --primary-violet: #9a00cb;
+    /* colores secundarios */
+    --secondary-purple: #7671ff;
+    --secondary-violet: #5d216f;
+    --secondary-blue: #323267;
+    /* tonos grises */
+    --color-grey-dark: #353535;
+    --color-grey-light: #a0a0a0a0;
+    /* tonos pastel */
+    --color-pastel-one: #f4f3ff;
+    --color-pastel-two: #ebf6fb;
+
+}
+
+.header {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header-logo{
+    display: flex;
+    align-self: center;
+}
+
+.header-logo-image{
+    width: 300px;
+}
+
+.navbar {
+    display: flex;
+    align-self: center;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li, a {
+    display: block;
+    transition: all .4s linear;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.navbar-menu li, a:hover {
+    color: var(--primary-light-blue);
+}
+
+.widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.widget h3 {
+    font-size: 2rem;
+}
+
+.button {
+    background: var(--primary-light-blue);
+    border: 2px solid var(--primary-light-blue);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    
+    font-size: 20px;
+}
+
+.button:hover{
+    transition: all .4s linear;
+    background: white;
+    color: black;
+}
+
+.section {
+    display: block;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.7rem;
+}
+
+.section-text {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 50px;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-redes i {
+    font-size: 25px;
+    padding: 0 15px;
+}
