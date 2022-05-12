@@ -1,0 +1,20 @@
+{
+  "name": "autodatee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeronimoVenzi/autodatee.git"
+  },
+  "author": "geronimo venzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeronimoVenzi/autodatee/issues"
+  },
+  "homepage": "https://github.com/GeronimoVenzi/autodatee#readme"
+}
