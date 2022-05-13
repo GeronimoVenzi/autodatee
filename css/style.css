@@ -1,132 +1,372 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-:root{ 
-    /*colores primarios*/
-    --primary-light-blue: #00a0e3;
-    --primary-blue: #0f5c9f;
-    --primary-violet: #9a00cb;
-    /* colores secundarios */
-    --secondary-purple: #7671ff;
-    --secondary-violet: #5d216f;
-    --secondary-blue: #323267;
-    /* tonos grises */
-    --color-grey-dark: #353535;
-    --color-grey-light: #a0a0a0a0;
-    /* tonos pastel */
-    --color-pastel-one: #f4f3ff;
-    --color-pastel-two: #ebf6fb;
+:root {
+  /*colores primarios*/
+  --primary-light-blue: #00a0e3;
+  --primary-blue: #0f5c9f;
+  --primary-violet: #9a00cb;
+  /* colores secundarios */
+  --secondary-purple: #7671ff;
+  --secondary-violet: #5d216f;
+  --secondary-blue: #323267;
+  /* tonos grises */
+  --color-grey-dark: #353535;
+  --color-grey-light: #a0a0a0a0;
+  /* tonos pastel */
+  --color-pastel-one: #f4f3ff;
+  --color-pastel-two: #ebf6fb;
 
+  /* modal whatsapp */
+  --burbuja-ancho: 64px;
+  --burbuja-icono-ancho: 32px;
+  --burbuja-whatsapp: #2d9f24;
+  --burbuja-color: #fff;
+  --burbuja-sombra: rgba(0,0,0, 0.1);
+  --chat-ancho: 360px;
+  --chat-cabecera: #095e54;
+  --chat-cabecera-texto: #fff;
+  --chat-cabecera-activo: #4ad504;
+  --chat-avatar-ancho: 52px;
+  --chat-cuerpo-texto: #111;
+  --chat-cuerpo-texto-operador: rgba(0,0,0,0.4);
+  --chat-cuerpo-hora: rgba(17,17,17,0.5);
+  --chat-cuerpo-fondo: rgba(230, 221, 212, 0.85);
+  --chat-cuerpo-dialogo: #fff;
+  --chat-cuerpo-dialogo-nombre: rgba(0,0,0,0.4);
+  --chat-pie: #fff;
+  --chat-boton: #4fce5d;
+  --chat-boton-texto: #fff
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
-.header-logo{
-    display: flex;
-    align-self: center;
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.header-logo-image{
-    width: 300px;
+.header-logo-image {
+  width: 300px;
 }
 
 .navbar {
-    display: flex;
-    align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .navbar-menu {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  padding: 0;
 }
 
 .navbar-menu li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navbar-menu li, a {
-    display: block;
-    transition: all .4s linear;
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    font-size: 18px;
-    padding: 2px;
+  display: block;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 18px;
+  padding: 2px;
 }
 
 .navbar-menu li, a:hover {
-    color: var(--primary-light-blue);
+  color: var(--primary-light-blue);
+}
+
+/* chat whatsapp */
+
+.chat {
+  width: var(--chat-ancho);
+  position: fixed;
+  bottom: 110px; 
+  border-radius: 0.625rem;
+  box-shadow: 0px 2px 8px 2px var(--burbuja-sombra);
+  right: 30px;
+}
+
+/* cabecera */
+
+.chat-cabecera {
+  background-color: var(--chat-cabecera);
+  box-sizing: border-box;
+  border-radius: 0.625rem 0.625rem 0 0;
+  display: flex;
+  padding: 1.25rem;
+  width: 100%;
+}
+
+.chat-avatar {
+  width: var(--chat-avatar-ancho);
+  position: relative;
+}
+
+.chat-avatar-img {
+  width: var(--chat-avatar-ancho);
+  border-radius: 50%;
+}
+
+.chat-avatar-img:before {
+  background-color: var(--chat-cabecera-activo);
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  left: 42px;
+  top: 38px;
+  width: 10px;
+  height: 10px;
+}
+
+.chat-texto {
+  color: var(--chat-cabecera-texto);
+  margin: 0 0 0 0.625rem;
+}
+
+.chat-texto-nombre {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+}
+
+.chat-texto-estado {
+  font-size: 0.85rem;
+  font-weight: normal;
+  line-height: 1rem;
+}
+
+/* cuerpo */
+
+.chat-cuerpo {
+  background: transparent url(/images/cuerpo-bg.jpg) center no-repeat;
+}
+.chat-cuerpo-dentro {
+ background-color: var(--chat-cuerpo-fondo) ;
+ padding: 1.25rem;
+}
+
+.chat-cuerpo-dialogo {
+  background-color: var(--chat-cuerpo-dialogo);
+  border-radius: 0.625rem;
+  display: inline-block;
+  padding: 1rem 1rem 0.25rem 1rem ;
+  position: relative;
+}
+
+.chat-cuerpo-dialogo::before {
+  border-left: 15px solid transparent;
+  border-top-left-radius: 5px;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--chat-cuerpo-dialogo);
+  border-bottom-left-radius: 5px;
+  content: '';
+  left: -10px;
+  top: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.chat-cuerpo-dialogo-nombre {
+  color: var(--chat-cuerpo-dialogo-nombre);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0 0 0.25rem;
+}
+
+.chat-cuerpo-dialogo-saludo {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+}
+
+.chat-cuerpo-dialogo-saludo p {
+  margin: 0 0 0.25rem;
+}
+
+.chat-cuerpo-dialogo-hora {
+  color: var(--chat-cuerpo-hora);
+  text-align: right;
+  font-weight: normal;
+  font-size: 0.85rem;
+  line-height: 1.125rem;
+}
+
+/* pie */
+
+.chat-pie {
+  background-color: var(--chat-pie);
+  padding: 1rem;
+}
+
+.chat-pie-boton {
+  background-color: var(--chat-boton);
+  color: var(--chat-boton-texto);
+  border-radius: 1.25rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  outline: none;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.chat-pie-boton svg {
+  margin-right: 0.625rem;
+}
+
+.chat-pie-boton:hover {
+  text-decoration: none;
+}
+
+/* burbuja whatsapp */
+.burbuja {
+  background-color: var(--burbuja-color);
+  border-radius: 50%;
+  bottom: 30px;
+  box-shadow: 0px 2px 8px 2px var(--burbuja-sombra), 0px -2px 8px 2px var(--burbuja-sombra);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--burbuja-ancho);
+  height: var(--burbuja-ancho);
+  position: fixed;
+  right: 30px;
+}
+
+.burbuja-icono {
+  width: var(--burbuja-icono-ancho);
+  color: var(--burbuja-whatsapp);
+
 }
 
 .widget {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem;
 }
 
 .widget h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .button {
-    background: var(--primary-light-blue);
-    border: 2px solid var(--primary-light-blue);
-    border-radius: 10px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    
-    font-size: 20px;
+  background: var(--primary-light-blue);
+  border: 2px solid var(--primary-light-blue);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
-.button:hover{
-    transition: all .4s linear;
-    background: white;
-    color: black;
+.button:hover {
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  background: white;
+  color: black;
 }
 
 .section {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .section-title {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .section-text {
-    text-align: center;
-    margin-top: 3rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-    margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  margin: 50px;
 }
 
 .footer-redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .footer-redes i {
-    font-size: 25px;
-    padding: 0 15px;
+  font-size: 25px;
+  padding: 0 15px;
 }
+/*# sourceMappingURL=style.css.map */
+
+
+
