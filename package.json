@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,5 @@
   "bugs": {
     "url": "https://github.com/GeronimoVenzi/autodatee/issues"
   },
-  "homepage": "https://github.com/GeronimoVenzi/autodatee#readme"
+  "homepage": "https://github.com/GeronimoVenzi/autodatee#readme" 
 }
