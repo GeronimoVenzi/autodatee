@@ -91,6 +91,7 @@ body {
   list-style: none;
   color: black;
   font-size: 18px;
+  margin-top: 0.625rem;
   padding: 2px;
 }
 
@@ -271,34 +272,43 @@ body {
 
 }
 
-.widget {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 200px;
   padding: 4rem;
 }
 
-.widget h3 {
-  font-size: 2rem;
+.title-text {
+  font-size: 2.5rem;
 }
 
 .button {
+  
   background: var(--primary-light-blue);
   border: 2px solid var(--primary-light-blue);
   border-radius: 10px;
   color: white;
-  padding: 10px 20px;
-  text-align: center;
+  margin-top: 30px;
   font-size: 20px;
+  padding: 2px 25px ;
 }
 
 .button:hover {
   transition: all .4s linear;
+  border: 2px solid var(--primary-light-blue);
   background: white;
   color: black;
+}
+
+.button a {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .section {
@@ -316,8 +326,6 @@ body {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -325,19 +333,70 @@ body {
   margin: 50px;
 }
 
-.footer-redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.footer {
+  width: 100%;
+  padding: 50px 0;
+  background-size: cover;
+}
+
+.footer-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.footer-data-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 40px;
 }
 
-.footer-redes i {
-  font-size: 25px;
-  padding: 0 15px;
+.footer-links-a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 400;
 }
-/*# sourceMappingURL=style.css.map */
 
+.footer-links-a:hover {
+  opacity: 0.8;
+}
+
+.footer-redes-icons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-redes-icons a {
+  text-decoration: none;
+  list-style: none;
+  gap: 2rem;
+  color: black;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.footer-copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.footer-copyright-text {
+  margin-top: 40px;
+  color: #7a7a7a;
+}
+
+.footer-copyright-text a:hover {
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondary-purple);
+}
 
 
