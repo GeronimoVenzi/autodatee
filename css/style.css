@@ -314,6 +314,7 @@ body {
 .section {
   display: block;
   text-align: center;
+  margin: 8rem;
 }
 
 .section-title {
@@ -325,12 +326,14 @@ body {
   margin-top: 3rem;
 }
 
-.cards {
+.section-cards {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 50px;
-  margin: 50px;
+}
+
+.card {
+  margin: 10rem;
 }
 
 .footer {
