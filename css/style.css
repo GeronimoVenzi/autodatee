@@ -347,12 +347,45 @@ body {
   width: 100%;
 }
 
+/* seccion sobre nosotros */
+.marketing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8rem;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.marketing-solutions {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+}
+
+.marketing-solutions-title {
+  margin-bottom: 2rem;
+}
+
+
+.marketing-solutions-title span {
+  color: var(--color-grey-light);
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+
 
 /* seccion footer */
 
 .footer {
   width: 100%;
   padding: 50px 0;
+  margin-top: -20rem;
   background-size: cover;
 }
 
