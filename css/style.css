@@ -283,7 +283,18 @@ body {
 
 .title-text {
   font-size: 2.5rem;
+  transition: all 300ms;
 }
+.title-text:hover {
+  transform: scale(1.1);
+  color: #969899;
+}
+
+.title-text span {
+  margin: 1rem;
+}
+
+
 
 .button {
   
@@ -311,30 +322,33 @@ body {
   margin-bottom: 10px;
 }
 
+/* seccion servicio */
 .section {
   display: block;
   text-align: center;
-  margin: 8rem;
-}
-
-.section-title {
-  font-size: 1.7rem;
+  margin-top: 9rem;
+  width: 100%;
+  height: 100%;
 }
 
 .section-text {
-  text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  line-height: 2;
 }
 
 .section-cards {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-top: 7rem;
 }
 
 .card {
-  margin: 10rem;
+  width: 100%;
 }
+
+
+/* seccion footer */
 
 .footer {
   width: 100%;
