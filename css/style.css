@@ -45,6 +45,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+/* seccion inicio */
+
 .header {
   height: 160px;
   display: -webkit-box;
@@ -378,6 +381,32 @@ body {
   margin-top: 8rem;
 }
 
+
+
+/* seccion clientes */
+
+.cases {
+  display: block;
+  width: 100%;
+}
+
+.cases-container {
+  margin-top: 9rem;
+}
+
+.cases-container p {
+  font-size: 1.3rem;
+  margin: 2rem;
+  margin-bottom: -8rem;
+}
+
+.cases-image-banner {
+  display: block;
+  margin: auto;
+  margin-bottom: 6rem;
+  width: 80%;
+  height: 8px;
+}
 
 
 /* seccion footer */

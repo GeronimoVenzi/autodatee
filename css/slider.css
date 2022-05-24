@@ -1,5 +1,5 @@
 .slider {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,7 @@
     min-width: 200px;
     max-width: 200px;
     height: 200px;
-    outline: 2px solid rgb(118, 76, 187);
+    outline: 2px solid rgb(127, 61, 233);
     cursor: pointer;
 }
 
