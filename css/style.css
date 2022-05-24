@@ -408,6 +408,19 @@ body {
   height: 8px;
 }
 
+/* seccion contacto */
+
+
+
+.contact-container {
+  display: flex;
+}
+
+.contact-me {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
 
 /* seccion footer */
 
