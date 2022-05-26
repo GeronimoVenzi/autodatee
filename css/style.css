@@ -11,7 +11,7 @@
   /* colores secundarios */
   --secondary-purple: #7671ff;
   --secondary-violet: #5d216f;
-  --secondary-blue: #323267;
+  --secondary-blue: #250fa3;
   /* tonos grises */
   --color-grey-dark: #353535;
   --color-grey-light: #a0a0a0a0;
@@ -99,7 +99,7 @@ body {
 }
 
 .navbar-menu li, a:hover {
-  color: var(--primary-light-blue);
+  color: var(--secondary-blue);
 }
 
 /* chat whatsapp */
@@ -348,6 +348,7 @@ body {
 
 .card {
   width: 100%;
+  margin-bottom: 7rem;
 }
 
 /* seccion sobre nosotros */
@@ -448,12 +449,12 @@ body {
 
 .footer-links-a {
   margin-top: 10px;
-  color: #7a7a7a;
   font-weight: 400;
+  text-align: center;
 }
 
-.footer-links-a:hover {
-  opacity: 0.8;
+.footer-links-a a:hover {
+  color: #250fa3;
 }
 
 .footer-redes-icons {
@@ -471,6 +472,11 @@ body {
   color: black;
   font-size: 30px;
   margin-top: 10px;
+}
+
+.footer-redes-icons a:hover {
+  transition: .3s ease-in-out;
+  color: #250fa3;
 }
 
 .footer-copyright {

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GeronimoVenzi/autodatee/issues"
   },
-  "homepage": "https://github.com/GeronimoVenzi/autodatee#readme"
+  "homepage": "https://github.com/GeronimoVenzi/autodatee#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.3"
+  }
 }
